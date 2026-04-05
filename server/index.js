@@ -5,6 +5,8 @@ import connectDB from './config/db.js'
 import authRouter from './routes/auth.route.js'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
+import userRouter from './routes/user.route.js'
+import websiteRouter from './routes/website.route.js'
 
 
 
@@ -17,6 +19,8 @@ app.use(cors({
     credentials:true
 }))
 app.use('/api/auth',authRouter)
+app.use('/api/user',userRouter)
+app.use('/api/website',websiteRouter)
 
 
 app.listen(port,()=>{
