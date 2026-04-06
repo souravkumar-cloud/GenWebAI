@@ -8,6 +8,7 @@ import Generate from './pages/Generate'
 import { Loader2 } from 'lucide-react'
 import WebEditor from './pages/WebEditor'
 import LiveSite from './pages/LiveSite'
+import Pricing from './pages/Pricing'
 export const serverUrl="http://localhost:3000"
 
 
@@ -31,6 +32,7 @@ const AppContent = () => {
       <Route path='/generate' element={userData ? <Generate /> : <Navigate to="/" />} />
       <Route path='/editor/:id' element={userData ? <WebEditor/>: <Navigate to="/"/>}/>
       <Route path='/site/:id' element={<LiveSite/>} />
+      <Route path='/pricing' element={<Pricing/>} />
     </Routes>
   )
 }
