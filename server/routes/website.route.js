@@ -9,6 +9,6 @@ websiteRouter.get('/get-by-id/:id',isAuth,getWebsiteById)
 websiteRouter.get('/get-all',isAuth,getAll)
 websiteRouter.post('/update/:id',isAuth,changes)
 websiteRouter.get('/deploy/:id',isAuth,deploy)
-websiteRouter.get('/get-by-slug/:id',isAuth,getBySlug)
+websiteRouter.get('/get-by-slug/:id',getBySlug)
 
 export default websiteRouter;
