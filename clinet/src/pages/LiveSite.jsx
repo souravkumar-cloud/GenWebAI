@@ -12,9 +12,7 @@ const LiveSite = () => {
     useEffect(() => {
             const handleGetWebsite = async () => {
                 try {
-                    const result = await axios.get(
-  `${serverUrl}/api/website/get-by-id/${id}`
-, { withCredentials: true })
+                    const result = await axios.get(`${serverUrl}/api/website/get-by-id/${id}` )
                     setHtml(result.data.latestCode)
                 } catch (err) {
                     console.log(err)
