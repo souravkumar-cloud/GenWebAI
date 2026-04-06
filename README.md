@@ -85,7 +85,7 @@ AiWebsiteBuilder/
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-username/ai-website-builder.git  
+git clone https://github.com/souravkumar-cloud/GenWebAI.git  
 cd ai-website-builder  
 
 ---
