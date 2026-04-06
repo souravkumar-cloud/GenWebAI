@@ -9,7 +9,7 @@ import { Loader2 } from 'lucide-react'
 import WebEditor from './pages/WebEditor'
 import LiveSite from './pages/LiveSite'
 import Pricing from './pages/Pricing'
-export const serverUrl="http://localhost:3000"
+export const serverUrl="https://genwebai-1qci.onrender.com"
 
 
 const AppContent = () => {
