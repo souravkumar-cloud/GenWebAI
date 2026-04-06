@@ -365,7 +365,8 @@ export const deploy=async(req,res)=>{
 export const getBySlug=async(req,res)=>{
   try {
     const website=await Website.findOne({
-      slug:req.params.slug
+      slug:req.params.slug,
+      user:req.user._id
     })
     if(!website) return res.status(400),json({message:"website not found"})
     return res.status(200).json(website)
